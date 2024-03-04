@@ -1,0 +1,64 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* max-height: 50%;
+    max-width: 50%; */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure modal appears on top of everything */
+  }
+  
+  .modal-body {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    overflow: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  
+  .button-pallet {
+    color: white;
+    background-color: #EC5D42;
+    
+  }
+  
+  .center-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 300px; /* Adjust margin to accommodate side navigation */
+      height: 100vh; /* Set height to 100% of viewport height */
+    }
+    
+    .centered-photo {
+      max-width: calc(100% - 300px); /* Adjust width to fit content area */
+      max-height: 100%; /* Ensure the photo does not exceed the height of the center container */
+    }
+
+    @media only screen and (max-width: 768px) {
+      .modal-body {
+        max-width: 90%;
+        max-height: 90%;
+        width: 500px;
+        overflow: auto;
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+    }
